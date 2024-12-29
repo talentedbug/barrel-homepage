@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Chosen Son | Bug Barrel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="startup-notice">Loading... ⏳</div>
+    <div id="choices" class="hidden">
+        <a href="#" id="choose-number-range">🔢 Number Range</a>
+        <a href="#" id="choose-upload">📤 Upload</a>
+        <a href="#" id="choose-presets">📚 Presets</a>
+    </div>
+    <div id="number-range-inputs" class="hidden">
+        <span>Begin: </span><span contenteditable="true" class="editable" id="begin-input">0</span>
+        <span>End: </span><span contenteditable="true" class="editable" id="end-input">10</span>
+        <button id="number-range-button">✅ Confirm</button>
+    </div>
+    <div id="upload-input" class="hidden">
+        <input type="file" id="file-input" accept=".txt">
+        <button id="upload-button">Upload</button>
+    </div>
+    <div id="presets-input" class="hidden">
+        <a href="#" class="preset" data-file="./preset1.txt">Preset not available now 😮‍💨</a>
+    </div>
+    <div id="result-container" class="hidden">
+        <button id="start-button">🎲 Start</button>
+    </div>
+    <div id="result-section" class="hidden">
+        <div id="result"></div>
+        <button id="retry-button" class="hidden">🔄 Retry</button>
+    </div>
+    <div id="fireworks" class="hidden">
+        🎆🎇✨
+    </div>
+    <footer>
+        <p><a href="https://bug-barrel.top">Bug Barrel</a> | <a href="https://hi.bug-barrel.top">Talented Bug</a></p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

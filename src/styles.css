@@ -23,6 +23,8 @@ body {
     color: inherit; /* Inherit text color */
     width: 50%;
     align-self: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .card:hover {

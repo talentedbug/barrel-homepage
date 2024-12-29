@@ -1,0 +1,85 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Noto Sans Mono', monospace;
+    margin: 0;
+    flex-direction: column;
+}
+
+#startup-notice, #choices, #number-range-inputs, #upload-input, #presets-input, #result-container, #result-section, #fireworks {
+    position: absolute;
+    text-align: center;
+    font-size: 2em;
+}
+
+.hidden {
+    display: none;
+}
+
+.editable {
+    display: inline-block;
+    border-bottom: 1px solid #000;
+    padding: 0 10px;
+    cursor: text;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button, .preset {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+}
+
+button:focus, .preset:focus {
+    outline: none;
+}
+
+.dark-mode {
+    background-color: #2e2e2e;
+    color: #d3d3d3;
+}
+
+.dark-mode button, .dark-mode .preset {
+    color: #d3d3d3;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.light-mode button, .light-mode .preset {
+    color: #000000;
+}
+
+.emoji-upload {
+    cursor: pointer;
+    font-size: 3em;
+}
+
+.preset {
+    display: block;
+    margin-top: 10px;
+}
+
+#fireworks {
+    font-size: 4em;
+}
+
+#result {
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    font-size: 1em;
+}
