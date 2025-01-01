@@ -1,9 +1,40 @@
+/* Universal link style */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body {
-    font-family: 'Noto Serif SC', serif;
+    font-family: 'Noto Sans Mono', monospace;
     background-color: #2e2e2e; /* Dark mode background */
     color: white;
     margin: 0;
     padding: 20px;
+}
+
+.header {
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
+.header p {
+    margin-top: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+.footnote {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.footnote img {
+    width: 50%;
 }
 
 .container {
@@ -19,8 +50,6 @@ body {
     border-radius: 10px;
     padding: 15px;
     transition: background-color 0.3s;
-    text-decoration: none; /* Remove underline from links */
-    color: inherit; /* Inherit text color */
     width: 50%;
     align-self: center;
     margin-top: 5px;
@@ -40,10 +69,12 @@ body {
 .text h3 {
     margin: 0;
     font-size: 1.5em;
+    text-align: left;
 }
 
 .text p {
     margin: 5px 0 0;
+    text-align: left;
 }
 
 /* Light mode styles */
@@ -60,4 +91,9 @@ body {
     .card:hover {
         background-color: #e0e0e0; /* Brighter card on hover in light mode */
     }
+}
+
+.coming-soon {
+    text-align: center;
+    font-style: italic;
 }
